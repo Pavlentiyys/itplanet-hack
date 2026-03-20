@@ -1,0 +1,50 @@
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+# Переменные окружения
+.env
+.env.*
+
+# База данных
+*.db
+*.sqlite
+*.sqlite3
+
+# Загруженные файлы
+static/*.jpg
+static/*.jpeg
+static/*.png
+static/*.gif
+static/*.webp
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Логи
+*.log
+logs/
+
+# Дистрибутив
+dist/
+build/
+*.egg-info/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

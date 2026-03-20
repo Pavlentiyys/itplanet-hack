@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(source /Users/pavel/.nvm/nvm.sh)"
+      "Bash(source /Users/pavel/.nvm/nvm.sh)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(''''\\\\n''''.join\\(f''''{k}: {v}'''' for k,v in d.get\\(''''dependencies'''',{}\\).items\\(\\)\\)\\)\")"
     ]
   }
 }
