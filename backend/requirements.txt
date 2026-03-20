@@ -1,0 +1,11 @@
+fastapi
+aiosqlite
+sqlmodel
+sqlalchemy
+pyjwt
+pwdlib[bcrypt,argon2]
+uvicorn
+python-multipart
+greenlet
+pydantic[email]
+pydantic-settings
