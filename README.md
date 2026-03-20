@@ -96,6 +96,46 @@ npx expo start
 
 ---
 
+## Сборка APK (Android)
+
+Используется [EAS Build](https://docs.expo.dev/build/introduction/) — облачная сборка от Expo. Не требует Android SDK локально.
+
+### 1. Установить EAS CLI
+
+```bash
+npm install -g eas-cli
+```
+
+### 2. Войти в Expo аккаунт
+
+> Если аккаунта нет — зарегистрируйся на [expo.dev](https://expo.dev) (бесплатно).
+
+```bash
+eas login
+```
+
+### 3. Запустить сборку APK
+
+```bash
+cd mobile
+eas build -p android --profile preview
+```
+
+- Первый раз EAS спросит, создать ли новый проект — выбрать **Yes**
+- Сборка займёт ~10–15 минут на серверах Expo
+- По завершении в терминале появится **ссылка для скачивания `.apk`**
+
+### Профили сборки
+
+| Профиль | Команда | Результат | Назначение |
+|---|---|---|---|
+| `preview` | `eas build -p android --profile preview` | `.apk` | Установка напрямую на телефон |
+| `production` | `eas build -p android --profile production` | `.aab` | Загрузка в Google Play |
+
+> Прогресс всех сборок можно отслеживать на [expo.dev/builds](https://expo.dev/builds)
+
+---
+
 ## Тестовые аккаунты
 
 | Email | Пароль | Роль |
